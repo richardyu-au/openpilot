@@ -499,8 +499,7 @@ def main():
     spinner_proc = None
   else:
     spinner_text = "chffrplus" if params.get("Passive")=="1" else "openpilot"
-    spinner_text = "autopilot by Velosiis"
-    spinner_proc = subprocess.Popen(["./spinner", "loading %s"%spinner_text],
+    spinner_proc = subprocess.Popen(["./spinner", "Powered by Velosiis"],
       cwd=os.path.join(BASEDIR, "selfdrive", "ui", "spinner"),
       close_fds=True)
   try:
